@@ -1,0 +1,15 @@
+# Configuration file for Varnish Agent.
+#
+# /etc/init.d/varnish-agent expects the variable $DAEMON_OPTS to be
+# set from this shell script fragment.
+#
+# See varnish-agent(1) for an overview of valid settings.
+
+#DAEMON_OPTS="-c 36085 -z http://10.0.2.2:8070/api/rest/register"
+
+DAEMON_OPTS="-c 36085 -z http://10.0.2.2:8080/api/rest/register"
+
+#DAEMON_OPTS="-c 36085 -z http://192.168.59.103:49155/api/rest/register"
+
+# an example of vac callback
+# DAEMON_OPTS="-z http://vac_server/api/rest/register"
