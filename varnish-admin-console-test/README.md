@@ -1,2 +1,1 @@
-# vagrant-boxes
-Some Vagrant boxes
+This Vagrant file allows you to test 4 Varnish instances, 2 x Varnish 3 and 2 x Varnish 4 with the Varnish Administration Console(https://www.varnish-software.com/product/varnish-administration-console-0)
