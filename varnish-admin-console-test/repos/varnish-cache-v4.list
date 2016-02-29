@@ -1,1 +1,1 @@
-deb https://repo.varnish-cache.org/debian/ precise varnish-4.0
+deb https://repo.varnish-cache.org/debian/ trusty varnish-4.0

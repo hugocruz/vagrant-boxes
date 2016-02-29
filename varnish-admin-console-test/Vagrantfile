@@ -5,8 +5,8 @@
 	varnish_servers = [
 		{
 			:hostname => 'cache1',
-			:box => 'varnish/ubuntu-12.04-amd64',
-			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-12.04-amd64.json',
+			:box => 'varnish/ubuntu-14.04-amd64',
+			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
 			:versionscript => 'scripts/varnish3.sh',
 			:startscript => 'scripts/cache1.sh',
 			:varnishport => '16081',
@@ -15,8 +15,8 @@
 		},
 		{
 			:hostname => 'cache2',
-			:box => 'varnish/ubuntu-12.04-amd64',
-			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-12.04-amd64.json',
+			:box => 'varnish/ubuntu-14.04-amd64',
+			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
 			:versionscript => 'scripts/varnish3.sh',
 			:startscript => 'scripts/cache2.sh',
 			:varnishport => '26081',
@@ -25,8 +25,8 @@
 		},
 		{
 			:hostname => 'cache3',
-			:box => 'varnish/ubuntu-12.04-amd64',
-			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-12.04-amd64.json',
+			:box => 'varnish/ubuntu-14.04-amd64',
+			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
 			:versionscript => 'scripts/varnish4.sh',
 			:startscript => 'scripts/cache3.sh',
 			:varnishport => '36081',
@@ -35,8 +35,8 @@
 		},
 		{
 			:hostname => 'cache4',
-			:box => 'varnish/ubuntu-12.04-amd64',
-			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-12.04-amd64.json',
+			:box => 'varnish/ubuntu-14.04-amd64',
+			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
 			:versionscript => 'scripts/varnish4.sh',
 			:startscript => 'scripts/cache4.sh',
 			:varnishport => '46081',
