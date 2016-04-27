@@ -5,6 +5,7 @@ Currently this setup has:
 - 2 x Varnish Cache 3.x
 - 2 x Varnish Cache 4.0.x
 - 1 x Varnish Cache 4.1
+- 
 Each instance has Varnish and the agent configured.
 
 
