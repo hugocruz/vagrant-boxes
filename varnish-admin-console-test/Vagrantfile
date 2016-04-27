@@ -43,6 +43,16 @@
 			:agentport => '46085',
 			:nginxport => '48070'
 		},
+		{
+			:hostname => 'cache5',
+			:box => 'varnish/ubuntu-14.04-amd64',
+			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
+			:versionscript => 'scripts/varnish41.sh',
+			:startscript => 'scripts/cache5.sh',
+			:varnishport => '56081',
+			:agentport => '56085',
+			:nginxport => '58070'
+		},
 	]
 
 Vagrant.configure("2") do |config|

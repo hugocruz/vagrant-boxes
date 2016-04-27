@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get install curl siege screen apache2 vim -y
 curl https://repo.varnish-cache.org/debian/GPG-key.txt | sudo apt-key add -
-sudo cp /vagrant/repos/varnish-cache-v4.list /etc/apt/sources.list.d/
+sudo cp /vagrant/repos/varnish-cache-v4.1.list /etc/apt/sources.list.d/
 sudo apt-get update
 echo ==== Installing Varnish ====
 sudo apt-get install varnish -y

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-declare -a caches=("cache1" "cache2" "cache3" "cache4")
+declare -a caches=("cache1" "cache2" "cache3" "cache4" "cache5")
 
 prog=`basename $0`
 
