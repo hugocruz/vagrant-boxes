@@ -2,9 +2,10 @@ This Vagrant file allows you to test 4 Varnish instances  with the [Varnish Admi
 
 Currently this setup has:
 
-- 2 x Varnish Cache 3.x
-- 2 x Varnish Cache 4.0.x
-- 1 x Varnish Cache 4.1
+- 2 x Varnish Cache 4.0.3 (cache1, cache2)
+- 2 x Varnish Cache 4.1.x (cache3, cache4)
+- 1 x Varnish Cache 3.0.7 (cache5)
+
 Each instance has Varnish and the agent configured.
 
 

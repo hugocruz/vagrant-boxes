@@ -1,5 +1,5 @@
 #!/bin/bash
-echo === configuring cache5 running Varnish 4.1===
+echo === configuring cache5 running Varnish 3===
 sudo cp /vagrant/cache5/ports.conf /etc/apache2/ports.conf
 echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/servername.conf
 sudo cp /vagrant/cache5/default.vcl /etc/varnish/default.vcl

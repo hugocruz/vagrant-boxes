@@ -5,11 +5,9 @@
 #
 # See varnish-agent(1) for an overview of valid settings.
 
-#DAEMON_OPTS="-c 46085 -z http://10.0.2.2:8070/api/rest/register"
+#DAEMON_OPTS="-c 6085 -z http://10.0.2.2:8070/api/rest/register"
 
-DAEMON_OPTS="-c 56085 -z http://10.0.2.2:8080/api/rest/register"
-
-#DAEMON_OPTS="-c 46085 -z http://192.168.59.103:49155/api/rest/register"
+DAEMON_OPTS="-c 44085 -z http://10.0.2.2:8080/api/rest/register -n cache5"
 
 # an example of vac callback
 # DAEMON_OPTS="-z http://vac_server/api/rest/register"

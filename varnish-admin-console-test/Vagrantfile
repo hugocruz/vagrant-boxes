@@ -7,51 +7,56 @@
 			:hostname => 'cache1',
 			:box => 'varnish/ubuntu-14.04-amd64',
 			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
-			:versionscript => 'scripts/varnish3.sh',
+			:versionscript => 'scripts/varnish4.sh',
 			:startscript => 'scripts/cache1.sh',
-			:varnishport => '16081',
-			:agentport => '16085',
-			:nginxport => '18070'
+			:varnishport => '6081',
+			:varnishHostport => '16081',
+			:agentPort => '16085',
+			:webport => '18070'
 		},
 		{
 			:hostname => 'cache2',
 			:box => 'varnish/ubuntu-14.04-amd64',
 			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
-			:versionscript => 'scripts/varnish3.sh',
+			:versionscript => 'scripts/varnish4.sh',
 			:startscript => 'scripts/cache2.sh',
-			:varnishport => '26081',
-			:agentport => '26085',
-			:nginxport => '28070'
+			:varnishport => '6081',
+			:varnishHostport => '26081',
+			:agentPort => '26085',
+			:webport => '28070'
 		},
 		{
 			:hostname => 'cache3',
 			:box => 'varnish/ubuntu-14.04-amd64',
 			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
-			:versionscript => 'scripts/varnish4.sh',
+			:versionscript => 'scripts/varnish41.sh',
 			:startscript => 'scripts/cache3.sh',
-			:varnishport => '36081',
-			:agentport => '36085',
-			:nginxport => '38070'
+			:varnishport => '6081',
+			:varnishHostport => '36081',
+			:agentPort => '36085',
+			:webport => '38070'
 		},
 		{
 			:hostname => 'cache4',
 			:box => 'varnish/ubuntu-14.04-amd64',
 			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
-			:versionscript => 'scripts/varnish4.sh',
+			:versionscript => 'scripts/varnish41.sh',
 			:startscript => 'scripts/cache4.sh',
-			:varnishport => '46081',
-			:agentport => '46085',
-			:nginxport => '48070'
+			:varnishport => '6081',
+			:varnishHostport => '46081',
+			:agentPort => '46085',
+			:webport => '48070'
 		},
 		{
 			:hostname => 'cache5',
 			:box => 'varnish/ubuntu-14.04-amd64',
 			:box_url => 'https://images.varnish-software.com/vagrant/ubuntu-14.04-amd64.json',
-			:versionscript => 'scripts/varnish41.sh',
+			:versionscript => 'scripts/varnish3.sh',
 			:startscript => 'scripts/cache5.sh',
-			:varnishport => '56081',
-			:agentport => '56085',
-			:nginxport => '58070'
+			:varnishport => '6081',
+			:varnishHostport => '44081',
+			:agentPort => '44085',
+			:webport => '44070'
 		},
 	]
 
@@ -63,9 +68,9 @@ Vagrant.configure("2") do |config|
 			cacheconfig.vm.hostname = cache[:hostname]
 			cacheconfig.vm.provision :shell, path: cache[:versionscript]
 			cacheconfig.vm.provision :shell, path: cache[:startscript]
-			cacheconfig.vm.network :forwarded_port, guest: cache[:varnishport], host: cache[:varnishport]
-			cacheconfig.vm.network :forwarded_port, guest: cache[:agentport], host: cache[:agentport]
-			cacheconfig.vm.network :forwarded_port, guest: cache[:nginxport], host: cache[:nginxport]
+			cacheconfig.vm.network :forwarded_port, guest: cache[:varnishport], host: cache[:varnishHostport]
+			cacheconfig.vm.network :forwarded_port, guest: cache[:agentPort], host: cache[:agentPort]
+			cacheconfig.vm.network :forwarded_port, guest: cache[:webport], host: cache[:webport]
 		end
 	end
 end

@@ -3,5 +3,6 @@
 echo "Starting all the Vac related things"
 
 sudo service varnish restart
+sleep 3
 sudo service varnish-agent restart
-sudo siege -c10 -t115m -f /vagrant/cache2/urls.txt
+sudo siege -c5 -t185m -f /vagrant/scripts/urls.txt --header="X-Server: Cache2" -v
