@@ -7,7 +7,7 @@
 
 #DAEMON_OPTS="-c 6085 -z http://10.0.2.2:8070/api/rest/register"
 
-DAEMON_OPTS="-c 16085 -z http://10.0.2.2:8080/api/rest/register -n cache1"
+DAEMON_OPTS="-c 16085 -z http://192.168.50.1:8080/api/rest/register?hostname=192.168.50.101 -n cache1"
 
 # an example of vac callback
 # DAEMON_OPTS="-z http://vac_server/api/rest/register"

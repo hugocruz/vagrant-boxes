@@ -7,7 +7,7 @@
 
 #DAEMON_OPTS="-c 36085 -z http://10.0.2.2:8070/api/rest/register"
 
-DAEMON_OPTS="-c 36085 -z http://10.0.2.2:8080/api/rest/register -n cache3"
+DAEMON_OPTS="-c 36085 -z http:///192.168.50.1:8080/api/rest/register?hostname=192.168.50.103 -n cache3"
 
 #DAEMON_OPTS="-c 6085 -z http://10.0.2.2:8091/api/rest/register"
 
